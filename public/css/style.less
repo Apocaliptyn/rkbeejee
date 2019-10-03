@@ -1,0 +1,192 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.wrapper {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+.loginForm,
+.taskForm {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+
+    &Errors {
+        width: 100%;
+        font-size: 0.7rem;
+        color: #92250e;
+    }
+    &Row {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+
+        & input {
+            width: 100%;
+            font-size: 1rem;
+        }
+        & textarea {
+            width: 100%;
+        }
+        & button {
+            width: 50%;
+            display: block;
+            margin: 0.3rem auto;
+        }
+    }
+}
+
+.topMenu {
+    width: 100%;
+
+    & ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 1rem 0;
+
+        & li {
+            display: inline-block;
+            margin: 0;
+            padding: 0 0.3rem;
+
+            & a {
+                color: inherit;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.task {
+    width: 100%;
+
+    &Table {
+        width: 100%;
+
+        &Checkbox {
+            width: 5%;
+        }
+        &Username {
+            width: 20%;
+        }
+        &Email {
+            width: 30%;
+        }
+        &Text {
+            width: 45%;
+
+            &Edited {
+                margin-bottom: 0.4rem;
+                font-size: 0.7rem;
+                color: #02004f;
+            }
+            & p {
+                margin: 0;
+            }
+        }
+        & th {
+            padding: 0.2rem 0.2rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-align: left;
+            background: #eeeeee;
+
+            & a {
+                display: block;
+                color: inherit;
+                text-decoration: underline;
+            }
+
+            &.sortable {
+                cursor: pointer;
+
+                &.active {
+                    background: #e0e0e0;
+                }
+            }
+        }
+        & tr {
+            position: relative;
+            border-bottom: 1px solid #3c3c3c;
+
+            & td {
+                padding: 0.3rem 0.2rem;
+                font-size: 1rem;
+                border: 1px solid #3c3c3c;
+
+                & .editButton {
+                    width: 100%;
+                    padding: 0.2rem 0.4rem;
+                    font-size: 0.8rem;
+                    background: #fafafa;
+                    border: 1px solid #dfdfdf;
+                    text-decoration: none;
+                    color: inherit;
+
+                    &:hover {
+                        background: #dfdfdf;
+                        transition: background-color 0.3s;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+
+        &.admin {
+
+            .taskTable {
+
+                &Checkbox {
+                    width: 5%;
+                }
+                &Username {
+                    width: 20%;
+                }
+                &Email {
+                    width: 23%;
+                }
+                &Text {
+                    width: 45%;
+                }
+                &Edit {
+                    width: 7%;
+                }
+            }
+        }
+    }
+
+    &Pagination {
+        width: 100%;
+        margin-top: 0.5rem;
+        text-align: center;
+
+        & a {
+            font-size: 0.9rem;
+            color: #000000;
+            text-decoration: underline;
+
+            &.current {
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

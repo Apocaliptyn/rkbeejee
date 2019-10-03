@@ -1,0 +1,167 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+.wrapper {
+  width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+.loginForm,
+.taskForm {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+.loginFormErrors,
+.taskFormErrors {
+  width: 100%;
+  font-size: 0.7rem;
+  color: #92250e;
+}
+.loginFormRow,
+.taskFormRow {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.loginFormRow input,
+.taskFormRow input {
+  width: 100%;
+  font-size: 1rem;
+}
+.loginFormRow textarea,
+.taskFormRow textarea {
+  width: 100%;
+}
+.loginFormRow button,
+.taskFormRow button {
+  width: 50%;
+  display: block;
+  margin: 0.3rem auto;
+}
+.topMenu {
+  width: 100%;
+}
+.topMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.topMenu ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0 0.3rem;
+}
+.topMenu ul li a {
+  color: inherit;
+  text-decoration: underline;
+}
+.topMenu ul li a:hover {
+  text-decoration: none;
+}
+.task {
+  width: 100%;
+}
+.taskTable {
+  width: 100%;
+}
+.taskTableCheckbox {
+  width: 5%;
+}
+.taskTableUsername {
+  width: 20%;
+}
+.taskTableEmail {
+  width: 30%;
+}
+.taskTableText {
+  width: 45%;
+}
+.taskTableTextEdited {
+  margin-bottom: 0.4rem;
+  font-size: 0.7rem;
+  color: #02004f;
+}
+.taskTableText p {
+  margin: 0;
+}
+.taskTable th {
+  padding: 0.2rem 0.2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: left;
+  background: #eeeeee;
+}
+.taskTable th a {
+  display: block;
+  color: inherit;
+  text-decoration: underline;
+}
+.taskTable th.sortable {
+  cursor: pointer;
+}
+.taskTable th.sortable.active {
+  background: #e0e0e0;
+}
+.taskTable tr {
+  position: relative;
+  border-bottom: 1px solid #3c3c3c;
+}
+.taskTable tr td {
+  padding: 0.3rem 0.2rem;
+  font-size: 1rem;
+  border: 1px solid #3c3c3c;
+}
+.taskTable tr td .editButton {
+  width: 100%;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  background: #fafafa;
+  border: 1px solid #dfdfdf;
+  text-decoration: none;
+  color: inherit;
+}
+.taskTable tr td .editButton:hover {
+  background: #dfdfdf;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.taskTable tr:last-of-type {
+  border-bottom: none;
+}
+.taskTable.admin .taskTableCheckbox {
+  width: 5%;
+}
+.taskTable.admin .taskTableUsername {
+  width: 20%;
+}
+.taskTable.admin .taskTableEmail {
+  width: 23%;
+}
+.taskTable.admin .taskTableText {
+  width: 45%;
+}
+.taskTable.admin .taskTableEdit {
+  width: 7%;
+}
+.taskPagination {
+  width: 100%;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.taskPagination a {
+  font-size: 0.9rem;
+  color: #000000;
+  text-decoration: underline;
+}
+.taskPagination a.current {
+  font-weight: 600;
+  text-decoration: none;
+}
+.taskPagination a:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
